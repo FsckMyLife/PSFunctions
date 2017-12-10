@@ -6,11 +6,11 @@ Param(
    [string]$ServerName,
 	
    [Parameter(Mandatory=$True)]
-   [string]$filePath
+   [string]$IPAddr
 )
 # Here's what you do:
 # Qry interfacealiases from $Server
-invoke-command $Servername {New-NetIPAddress –InterfaceAlias “vEthernet (VS02-Internal)” –IPAddress “10.1.1.25” –PrefixLength 24}
+invoke-command $Servername {New-NetIPAddress –InterfaceAlias “vEthernet (VS02-Internal)” –IPAddress $IPAddr –PrefixLength 24}
 
 
 }
