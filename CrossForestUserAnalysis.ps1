@@ -10,7 +10,10 @@
 # 2. Paramaterize inputs/individual collection targeting  # #
 # 3. Purge inactive profiles after query                   ## 
 #############################################################
-#Not a function, but a few useful samples I was able to find in my notes.
+# Not a function, but a few useful samples I was able to find in my notes.
+# Also, this sadly doesn't include the get-aduser switch for remote domains.
+# Never made a copy of completed, more simplified version
+
 
 $UPDir=""
 $QueryDir=""
